@@ -67,13 +67,37 @@ export function NotionPageHeader({
                 )
               } else {
                 return (
-                  <components.Link
-                    href={link.url}
-                    key={index}
-                    className={cs(styles.navLink, 'breadcrumb', 'button')}
-                  >
-                    {link.title}
-                  </components.Link>
+                  //innovate//
+                  // <components.Link
+                  //   href={link.url}
+                  //   key={index}
+                  //   className={cs(styles.navLink, 'breadcrumb', 'button')}
+                  // >
+                  //   {link.title}
+                  // </components.Link>
+                  //innvocate//
+                  <a
+  href={link.url}
+  key={index}
+  className={cs(styles.navLink, 'breadcrumb', 'button')}
+  onClick={(e) => {
+    e.preventDefault()
+
+    const targetId = link.url?.replace('#', '')
+    const target = document.getElementById(targetId)
+
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth'
+      })
+
+      window.history.replaceState(null, '', ' ')
+    }
+  }}
+>
+  {link.title}
+</a>
+              //innovate
                 )
               }
             })
