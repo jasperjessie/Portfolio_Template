@@ -45,21 +45,9 @@ export function NotionPageHeader({
 
   return (
     <header className='notion-header'>
-      {/* innovate */}
-      <div
-  className='notion-nav-header'
-  style={{
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center'
-  }}
->
-        {/* innovate */}
-      {/* <div className='notion-nav-header'> */}
-        {/* innovate */}
-        {/* <Breadcrumbs block={block} rootOnly={true} /> */}
-         {/* innovate */}
-
+      <div className='notion-nav-header'>
+        <Breadcrumbs block={block} rootOnly={true} />
+        
         <div className='notion-nav-header-rhs breadcrumbs'>
           {navigationLinks
             ?.map((link, index) => {
