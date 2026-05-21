@@ -67,7 +67,6 @@ export function NotionPageHeader({
                 )
               } else {
                 return (
-                  
                   <components.Link
                     href={link.url}
                     key={index}
