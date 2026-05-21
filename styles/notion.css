@@ -13,6 +13,9 @@
 
 
 /*actual*/
+html {
+  scroll-behavior: smooth;
+}
 
 .notion {
   --notion-max-width: 720px;
