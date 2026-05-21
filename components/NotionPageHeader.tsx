@@ -91,7 +91,7 @@ export function NotionPageHeader({
         behavior: 'smooth'
       })
 
-      window.history.replaceState(null, '', ' ')
+      window.history.replaceState(null, '', '/')
     }
   }}
 >
