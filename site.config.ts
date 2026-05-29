@@ -19,7 +19,7 @@ export default siteConfig({
   // social usernames (optional)
   linkedin: 'jasper-jessie-bb789a162',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
-  email: 'mailto:jasperjessie@gmail.com', // optional newsletter URL
+  newsletter: 'jasperjessie@gmail.com', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
 
   // default notion icon and cover images for site-wide consistency (optional)
